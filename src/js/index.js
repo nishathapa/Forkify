@@ -38,7 +38,7 @@ const controlSearch = async () => {
         searchView.renderResults(state.search.result);
 
         }catch(err) {
-            alert('Sommething wrong with the search...');
+            alert('Something wrong with the search...');
             clearLoader();
         }
     }
@@ -48,6 +48,9 @@ elements.searchForm.addEventListener('submit', e => {
     e.preventDefault();
     controlSearch();
 });
+
+
+
 
 elements.searchResPages.addEventListener('click', e => {
     const btn = e.target.closest('.btn-inline');
@@ -75,6 +78,7 @@ const controlRecipe = async () => {
         try {
              //Get recipe data
             await state.recipe.getRecipe();
+            state.recipe.parseIngredients();
 
             //Calculate servings and time
             state.recipe.calcServings();
