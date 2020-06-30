@@ -24,6 +24,7 @@
     "axios": "^0.19.2",
     "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
-    "core-js": "^3.6.5"
+    "core-js": "^3.6.5",
+    "fractional": "^1.0.0"
   }
 }
