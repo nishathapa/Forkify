@@ -25,6 +25,7 @@
     "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "core-js": "^3.6.5",
-    "fractional": "^1.0.0"
+    "fractional": "^1.0.0",
+    "uniqid": "^5.2.0"
   }
 }
