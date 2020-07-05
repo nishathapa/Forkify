@@ -1,4 +1,4 @@
-import { elements } from '.base';
+import { elements } from './base';
 
 export const renderItem = item => {
     const markup = `
@@ -22,5 +22,5 @@ export const renderItem = item => {
 
 export const deleteItem = id => {
     const item = document.querySelector(`[data-itemid="${id}"]`);
-    item.parentElement.removeChild(item);
+    if (item) item.parentElement.removeChild(item);
 };
